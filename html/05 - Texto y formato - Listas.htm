@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 - Texto y formato - Listas</title>
+    <meta name="author" content="tu nombre">
+    <meta name="description" content="Aprender listas y formatos de texto">
+</head>
+<!-- Recordemos: 
+    FORMATOS DE TEXTO - La especificación HTML5 establece que los encabezados deben indicarse con las etiquetas <h1> a <h6>, el texto enfatizado debe indicarse con la etiqueta <em> (en lugar de <i>), el texto mportante debe indicarse con la etiqueta <strong> preferible a <b> y el texto marcado/resaltado debe estar indicado denotado con la etiqueta <mark>
+    LISTAS - Existen 3 tipos:
+        ordenadas <ol>
+        desordenadas <ul> y
+        de definición <dl>
+    Las listas declaran sus elementos constitutivos:
+        en las listas ordenadas y desordenadas con <li> y
+        en listas de definición con:
+            <dt> para establecer el termino a definir y
+            <dd> para mostrar la definición-->
+<body>
+    <h1>Características de un esquema</h1>
+    <h2>Un esquema elaborado adecuadamente debe cumplir con estas características:</h2>
+    <ol type="i" reversed>
+        <!-- Las etiquetas de lista pueden contener atributos que especifiquen:
+            <type> el indicador de orden de la lista (1, A, a, I, i)
+            <start> el valor con el que se iniciará la lista
+            <reverse> invierte el orden
+        https://disenowebakus.net/listas-html.php -->
+        <li>Representación <em>gráfica</em>, relacionando los conceptos mediante <u>líneas o colores</u>.</li>
+        <li>Su función es <em>resumir</em>.</li>
+        <li><em>Concreto</em>, conteniendo en pocas palabras la <u>información importante</u>.</li>
+        <li>Solo contiene una o unas <em>pocas ideas principales</em>, desde las cuales parten los conceptos complementarios.</li>
+    </ol>
+    <h2>¿Cómo hacer un esquema?</h2>
+    <p>Para saber elaborar un esquema es necesario haber leído previamente el contenido que se desea analizar o aprender. Una vez leído y comprendido, es necesario seguir estos pasos:</p>
+    <ol start="4">
+        <li>Anotar o <strong>subrayar el título</strong> del capítulo o tema a esquematizar.</li>
+        <li><strong>Dividir el tema</strong> en secciones.
+        <li><strong>Destacar las ideas principales</strong>, secundarias y, eventualmente, terciarias en cada sección.</li>
+        <li>Comenzar la <strong>jerarquización</strong> una vez definidos el tema, subtemas y las ideas principales y secundarias.</li>
+        <li>El esquema solo contendrá <strong>conceptos clave</strong>, evitando largas explicaciones.</li>
+        <li>Una vez acabado el esquema, intentar <strong>explicar el tema</strong> estudiado. Si fue posible entenderlo a partir del esquema, quiere decir que la jerarquización de ideas fue correcta.</li>
+    </ol>
+    <hr width="75%" align="left">
+    <hr size="10" noshade>
+    <hr width="75%" align="right">
+    <!-- <hr> genera una linea horizontal (horizontal rule) que:
+    Cubrirá todo el ancho del area de navegación, a menos que se le indique su ancho con el atributo width empleando para ello
+    - bien un valor absoluto (numero de pixeles) o
+    - relativo (porcentaje del area de navegación que abarcará la linea)
+    Tambien se pueden definir
+    - su alineación con align y
+    - su grosor con size. Por defecto una linea con grosor mostrará su interior transparente a menos que se indique lo contrario con noshade-->
+    <h1><mark>Grupos de vertebrados :</mark></h1>
+    <dl>
+        <di>Mamíferos:</di>
+        <dd>Alimentan a sus crías con leche. Respiran a través de pulmones.</dd>
+        <di>Aves:</di>
+        <dd>Tienen el cuerpo cubierto de plumas. Poseen 2 patas y 2 alas. Respiran por pulmones.</dd>
+        <di>Peces:</di>
+        <dd>Tienen el cuerpo cubierto de escamas. Tienen aletas con las cuales puede nadar. Respiran por branquias.</dd>
+        <di>Reptiles:</li>
+            <dd>Tiene el cuerpo cubierto por una escama dura y áspera.</dd>
+            <di>Anfibios:</di>
+            <dd>Tienen el cuerpo cubierto por una piel húmeda, por lo que necesita vivir cerca de agua. Tienen patas musculosas que les permite saltar o nadar.</dd>
+    </dl>
+</body>
+</html>

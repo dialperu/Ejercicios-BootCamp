@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08 - Formularios – HTML semántico</title>
+    <meta name="author" content="tu nombre">
+    <meta name="description" content="Formularios, HTML semantico">
+</head>
+
+<body>
+    <form action="" method="GET"></form>
+    <p><label for="apell">Apellidos: </label>
+        <input type="text" id="apell" name="apell" maxlength="50" size="50"></p>
+    <p><label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" maxlength="20"></p>
+        <!-- El valor por defecto de size es 20 -->
+    <p>Sexo:
+        <input type="radio" name="sexo_H" value="h"><label for="sexo_H">hombre</label>
+        <input type="radio" name="sexo_M" value="m"><label for="sexo_M">mujer</label>
+    </p>
+    <p><label for="edad">Edad: </label>
+        <input type="number" id="edad" name="edad" min="18" size="6"></p>
+    <p><label for="marca">Marca: </label>
+        <select name="marca" id="marca">
+            <option value="Fiat">Fiat</option>
+            <option value="Ford">Ford</option>
+            <option value="Seat">Seat</option>
+            <option value="Volvo">Volvo</option>
+        </select>
+    </p>
+    <p></p>
+    <p>
+        <input type="checkbox" name="info" checked> Solicito información de la marca de vehiculos seleccionada a traves de mi 
+        <label for="email">correo electrónico: </label>
+        <input type="text" maxlength="100"></p>
+    <p>
+        <input type="checkbox" name="condiciones"> Conozco y acepto la normativa sobre protección de datos</p>
+   
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 - Enlaces - Tablas</title>
+    <meta name="author" content="tu nombre">
+    <meta name="description" content="Aprender vinculos y tablas">
+    <style>
+        table, tr, th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+    <!-- Por el momento no prestes atención a los estilos de la tabla, pues se tratarán más ampliamente en CSS, y centrate en las etiquetas empleadas para la tabla y enlaces en <body> -->
+</head>
+
+<body>
+    <table>
+        <!-- Recordemos:
+        <table> Delimita todo el contenido de la tabla
+        <tr> Delimita el contenido de las filas
+        <th> Realza la celda por ser de cabecera
+        <td> Delimita el contenido de cada celda -->
+
+        <caption><h1>Grupos de <a href="https://www.spanish.cl/ciencias-naturales/animales-vertebrados.htm">vertebrados</a>:</h1></caption>
+        <!-- <caption> da título a la tabla -->
+        <tr>
+            <th>Clasificación</th>
+            <th>Cuerpo cubierto de</th>
+            <th colspan="2">Respiración</th>
+            <!-- <colspan> agrupa el número de columnas indicado en el valor, de esa forma, más adelante, se podrán incluir horizontalmente 2 celdas en la misma columna-->
+            <th>Ejemplos</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Mamíferos</td>
+            <td rowspan="2">Pelos</td>
+            <td rowspan="2" colspan="2">Respiran a través de pulmones</td>
+            <!-- <colspan> tendrá que incluirse cuantas veces no se necesite dividir la columna
+            Igual con <rowspan> para las filas que no se quieran divididas -->
+            <td>Gato</td></tr>
+            <tr><td>Caballo</td></tr>
+        <tr>
+            <td rowspan="2">Aves</td>
+            <td rowspan="2">Plumas</td>
+            <td rowspan="2" colspan="2">Respiran por pulmones</td>
+            <!-- <colspan> tendrá que incluirse cuantas veces no se necesite dividir la columna
+            Igual con <rowspan> para las filas que no se quieran divididas -->
+            <td>Loro</td></tr>
+            <tr><td>Pingüino</td></tr>
+        </tr>
+        <tr>
+            <td rowspan="3">Peces</td>
+            <td rowspan="3">Escamas</td>
+            <td rowspan="3" colspan="2">Respiran por branquias</td>
+            <td>Tiburón</td></tr>
+            <tr><td>Anguila</td></tr>
+            <tr><td>Salmón</td></tr>
+        </tr>
+        <tr>
+            <td rowspan="2">Anfibios</td>
+            <td rowspan="2">Piel húmeda</td>
+            <td rowspan="2">Larva: Branquias</td>
+            <td rowspan="2">Adulto: Pulmones</td>
+            <td>Tiburón</td></tr>
+            <tr><td>Anguila</td></tr>
+        </tr>
+    </table>
+
+    <p><em>Mas ejemplos de <a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=516:crear-tablas-html-colspan-y-rowspan-unir-celdas-horizontal-y-vertical-tr-td-th-caption-o-titulo-cu00719b&catid=69&Itemid=192">unir celdas horizontal y verticalmente</a></em>
+    </p>
+
+</body>
+</html>
